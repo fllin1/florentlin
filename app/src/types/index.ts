@@ -68,7 +68,7 @@ export interface Hobby {
   id: string
   name: string
   description: string
-  icon: 'dumbbell' | 'leaf' | 'brain' | 'globe'
+  icon: 'dumbbell' | 'leaf' | 'brain' | 'globe' | 'book'
 }
 
 export interface Personality {

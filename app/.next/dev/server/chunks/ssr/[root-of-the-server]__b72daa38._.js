@@ -500,7 +500,8 @@ const iconPaths = {
     dumbbell: "M6.5 6.5h-3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3m11-11h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-3M6.5 12h11M6.5 6.5v11M17.5 6.5v11",
     leaf: "M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z",
     brain: "m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25",
-    globe: "M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25"
+    globe: "M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25",
+    book: "M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
 };
 function HobbyCard({ hobby, index }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -523,17 +524,17 @@ function HobbyCard({ hobby, index }) {
                         d: iconPaths[hobby.icon]
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/HobbyCard.tsx",
-                        lineNumber: 33,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/HobbyCard.tsx",
-                    lineNumber: 24,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/HobbyCard.tsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -547,7 +548,7 @@ function HobbyCard({ hobby, index }) {
                         children: hobby.name
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/HobbyCard.tsx",
-                        lineNumber: 39,
+                        lineNumber: 40,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -558,19 +559,19 @@ function HobbyCard({ hobby, index }) {
                         children: hobby.description
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/HobbyCard.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sections/HobbyCard.tsx",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/sections/HobbyCard.tsx",
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
@@ -592,7 +593,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section
 function AboutSection({ aspirations, hobbies }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "about",
-        className: "py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50",
+        className: "py-24 px-6 md:px-12 lg:px-24",
         style: {
             fontFamily: "var(--font-body)"
         },
@@ -1356,7 +1357,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section
 function ExperienceSkills({ experiences, education, skillCategories, onExperienceClick, onEducationClick, onSkillClick, onGitHubClick }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "experience",
-        className: "py-24 px-6 md:px-12 lg:px-24",
+        className: "py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50",
         style: {
             fontFamily: "'Noto Sans', sans-serif"
         },
@@ -1748,7 +1749,7 @@ function ContactSection({ contactLinks, onContactClick }) {
     const hasSecondaryLinks = secondaryLinks.length > 0;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "contact",
-        className: "py-24 px-6 md:px-12 lg:px-24",
+        className: "py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50",
         style: {
             fontFamily: "'Noto Sans', sans-serif"
         },
@@ -1949,8 +1950,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const SECTIONS = [
     'hero',
-    'about',
     'experience',
+    'about',
     'contact'
 ];
 function useActiveSection() {
@@ -2044,7 +2045,7 @@ const aspirations = [
     {
         id: "asp-001",
         title: "End-to-End Ownership",
-        description: "Create real-world applications with full MLOps pipeline ownership — from research to production."
+        description: "Create real-world applications with full pipeline ownership — from research to production."
     },
     {
         id: "asp-002",
@@ -2054,7 +2055,7 @@ const aspirations = [
     {
         id: "asp-003",
         title: "Measurable Impact",
-        description: "Demonstrate real-world value through improved sales, ROI, and customer retention."
+        description: "Demonstrate real-world value through improved value metrics, ROI, and customer satisfaction."
     }
 ];
 const hobbies = [
@@ -2081,6 +2082,12 @@ const hobbies = [
         name: "Cultures",
         description: "Interest in diverse cultures and perspectives",
         icon: "globe"
+    },
+    {
+        id: "hobby-005",
+        name: "Manga",
+        description: "Domain expansion",
+        icon: "book"
     }
 ];
 const personality = {
@@ -2107,7 +2114,7 @@ const experiences = [
         startDate: "2025-01",
         endDate: null,
         current: true,
-        description: "Critical defect detection, model explainability with SHAP, ETL pipelines for predictive maintenance, and MLOps pipeline development.",
+        description: "Critical defect detection, model explainability with SHAP, ETL pipelines for predictive maintenance, and dashboard development.",
         detailUrl: "/projects/sncf",
         githubUrl: null
     },
@@ -2119,7 +2126,7 @@ const experiences = [
         startDate: "2024-06",
         endDate: "2024-11",
         current: false,
-        description: "Machine Un-Learning research and implementation. Fine-tuned LlaMA and RoBERTa models for prompt classification.",
+        description: "Machine Un-Learning research and implementation. Fine-tuned LlaMA and RoBERTa models.",
         detailUrl: "/projects/aubay",
         githubUrl: null
     },

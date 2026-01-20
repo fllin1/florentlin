@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import type { SectionId } from "@/types"
 
-const SECTIONS: SectionId[] = ['hero', 'about', 'experience', 'contact']
+const SECTIONS: SectionId[] = ['hero', 'experience', 'about', 'contact']
 
 export function useActiveSection(): SectionId {
   const [activeSection, setActiveSection] = useState<SectionId>('hero')

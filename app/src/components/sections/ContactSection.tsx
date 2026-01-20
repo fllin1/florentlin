@@ -20,7 +20,7 @@ export function ContactSection({ contactLinks, onContactClick }: ContactSectionP
   return (
     <section
       id="contact"
-      className="py-24 px-6 md:px-12 lg:px-24"
+      className="py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50"
       style={{ fontFamily: "'Noto Sans', sans-serif" }}
     >
       <div className="max-w-xl mx-auto text-center">

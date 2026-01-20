@@ -5,7 +5,7 @@ export const aspirations: Aspiration[] = [
     id: "asp-001",
     title: "End-to-End Ownership",
     description:
-      "Create real-world applications with full MLOps pipeline ownership — from research to production.",
+      "Create real-world applications with full pipeline ownership — from research to production.",
   },
   {
     id: "asp-002",
@@ -17,7 +17,7 @@ export const aspirations: Aspiration[] = [
     id: "asp-003",
     title: "Measurable Impact",
     description:
-      "Demonstrate real-world value through improved sales, ROI, and customer retention.",
+      "Demonstrate real-world value through improved value metrics, ROI, and customer satisfaction.",
   },
 ]
 
@@ -45,6 +45,12 @@ export const hobbies: Hobby[] = [
     name: "Cultures",
     description: "Interest in diverse cultures and perspectives",
     icon: "globe",
+  },
+  {
+    id: "hobby-005",
+    name: "Manga",
+    description: "Domain expansion",
+    icon: "book",
   },
 ]
 

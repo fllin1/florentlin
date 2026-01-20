@@ -8,7 +8,7 @@ export function AboutSection({ aspirations, hobbies }: AboutProps) {
   return (
     <section
       id="about"
-      className="py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50"
+      className="py-24 px-6 md:px-12 lg:px-24"
       style={{ fontFamily: "var(--font-body)" }}
     >
       <div className="max-w-5xl mx-auto">

@@ -32,7 +32,7 @@ export function ExperienceSkills({
   return (
     <section
       id="experience"
-      className="py-24 px-6 md:px-12 lg:px-24"
+      className="py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50"
       style={{ fontFamily: "'Noto Sans', sans-serif" }}
     >
       <div className="max-w-6xl mx-auto">

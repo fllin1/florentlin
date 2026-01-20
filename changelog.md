@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-01-20 — Navigation Fix
+
+### Fixed
+- **Section navigation indicator**: Fixed the right-side nav not recognizing About and Contact sections
+  - The `SECTIONS` array order in `useActiveSection.ts` didn't match the actual page order
+  - Changed from `['hero', 'about', 'experience', 'contact']` to `['hero', 'experience', 'about', 'contact']`
+
+---
+
+## 2026-01-20 — Background Alternation Fix
+
+### Fixed
+- **Section background alternation**: Corrected the alternating background pattern for light theme
+  - Hero: body background (unchanged)
+  - Experience: surface background (added)
+  - About: body background (removed surface)
+  - Contact: surface background (added)
+
+---
+
 ## 2026-01-20 — Dark Mode Fix
 
 ### Fixed
