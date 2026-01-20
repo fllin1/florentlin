@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* Design Tokens for Florent Lin Portfolio */
+:root {
+  /* Colors - Light Mode */
+  --color-primary: #d4a373;
+  --color-secondary: #ccd5ae;
+  --color-background: #fefae0;
+  --color-surface: #faedcd;
+  --color-text: #3d3d3d;
+  --color-text-muted: #6b6b6b;
+
+  /* Typography - using next/font CSS variables */
+  --font-heading: var(--font-heading), 'Zen Kaku Gothic New', sans-serif;
+  --font-body: var(--font-body), 'Noto Sans', sans-serif;
+  --font-mono: var(--font-mono), 'IBM Plex Mono', monospace;
+}
+
+/* Dark Mode - System Preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #d4a373;
+    --color-secondary: #ccd5ae;
+    --color-background: #1a1a1a;
+    --color-surface: #2a2a2a;
+    --color-text: #fefae0;
+    --color-text-muted: #a0a0a0;
+  }
+}
+
+/* Dark mode class override */
+.dark {
+  --color-primary: #d4a373;
+  --color-secondary: #ccd5ae;
+  --color-background: #1a1a1a;
+  --color-surface: #2a2a2a;
+  --color-text: #fefae0;
+  --color-text-muted: #a0a0a0;
+}
+
+/* Tailwind v4 theme inline */
+@theme inline {
+  /* Colors */
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-foreground: var(--color-text);
+  --color-muted: var(--color-text-muted);
+
+  /* Primary shades */
+  --color-primary-50: #faf6f1;
+  --color-primary-100: #f3ede0;
+  --color-primary-200: #e7dac1;
+  --color-primary-300: #dbc7a1;
+  --color-primary-400: #d4a373;
+  --color-primary-500: #c88f55;
+  --color-primary-600: #b07340;
+  --color-primary-700: #8b5a32;
+  --color-primary-800: #6a442a;
+  --color-primary-900: #4d3222;
+
+  /* Secondary shades */
+  --color-secondary-50: #f7f9f3;
+  --color-secondary-100: #eef2e7;
+  --color-secondary-200: #dce5cf;
+  --color-secondary-300: #ccd5ae;
+  --color-secondary-400: #b9c38f;
+  --color-secondary-500: #a0ad72;
+  --color-secondary-600: #858f5c;
+  --color-secondary-700: #6a7149;
+  --color-secondary-800: #525839;
+  --color-secondary-900: #3d422c;
+
+  /* Font families - reference next/font CSS variables */
+  --font-heading: var(--font-heading), 'Zen Kaku Gothic New', sans-serif;
+  --font-body: var(--font-body), 'Noto Sans', sans-serif;
+  --font-mono: var(--font-mono), 'IBM Plex Mono', monospace;
+}
+
+/* Base body styles */
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+/* Smooth scroll for section navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =============================================================================
+   Hero Section Animations
+   ============================================================================= */
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowBounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* Animation utility classes */
+.animate-fade-slide-up {
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out 0.3s forwards;
+}
+
+.animate-arrow-bounce {
+  animation: arrowBounce 2s ease-in-out infinite;
+}
+
+/* Animation delay utilities */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animation-delay-800 {
+  animation-delay: 0.8s;
+}
+
+.animation-delay-1200 {
+  animation-delay: 1.2s;
+}

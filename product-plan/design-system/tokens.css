@@ -1,0 +1,38 @@
+/* Design Tokens for Florent Lin Portfolio */
+
+:root {
+  /* Colors - Light Mode */
+  --color-primary: #d4a373;
+  --color-secondary: #ccd5ae;
+  --color-background: #fefae0;
+  --color-surface: #faedcd;
+  --color-text: #3d3d3d;
+  --color-text-muted: #6b6b6b;
+
+  /* Typography */
+  --font-heading: 'Zen Kaku Gothic New', sans-serif;
+  --font-body: 'Noto Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #d4a373;
+    --color-secondary: #ccd5ae;
+    --color-background: #1a1a1a;
+    --color-surface: #2a2a2a;
+    --color-text: #fefae0;
+    --color-text-muted: #a0a0a0;
+  }
+}
+
+/* Dark mode class override */
+.dark {
+  --color-primary: #d4a373;
+  --color-secondary: #ccd5ae;
+  --color-background: #1a1a1a;
+  --color-surface: #2a2a2a;
+  --color-text: #fefae0;
+  --color-text-muted: #a0a0a0;
+}

@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "models": {
+      "profile": "Core personal identity displayed in the hero section: name, professional title, location, and a brief tagline that captures professional aspirations."
+    },
+    "relationships": [
+      "Profile is the root entity - the hero section displays a single profile"
+    ]
+  },
+  "profile": {
+    "id": "florent-lin",
+    "name": "Florent Lin",
+    "title": "Data Scientist",
+    "location": "Paris, France",
+    "tagline": "Building real-world ML systems with measurable",
+    "taglineEmphasis": "impact",
+    "socialLinks": [
+      {
+        "type": "linkedin",
+        "url": "https://www.linkedin.com/in/florentlin",
+        "label": "LinkedIn"
+      },
+      {
+        "type": "github",
+        "url": "https://github.com/fllin1",
+        "label": "GitHub"
+      }
+    ]
+  }
+}
