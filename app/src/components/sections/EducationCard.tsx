@@ -103,6 +103,25 @@ export function EducationCard({
         </p>
       )}
 
+      {/* Skills */}
+      {education.skills && education.skills.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {education.skills.map((skill) => (
+            <span
+              key={skill}
+              className="text-xs px-2 py-0.5 rounded-full"
+              style={{
+                backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                color: 'var(--color-text, #3d3d3d)',
+                fontFamily: "'IBM Plex Mono', monospace",
+              }}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      )}
+
       {/* Arrow indicator */}
       {isClickable && (
         <div

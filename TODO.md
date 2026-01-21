@@ -2,16 +2,16 @@
 
 ## Overall
 
-- [ ] Change the logo
+- [x] Change the logo
 - [ ] Add a chatbot on the (future) info page
 
 ## Hero Section
 
 ## Experience & Skills Section
 
-- [ ] Freelance subsection
-  - [ ] Add a subsection for freelance projects called `FREELANCE`
-  - [ ] Move the freelance projects from the `EXPERIENCE` subsection to the `FREELANCE` subsection
+- [x] Freelance subsection
+  - [x] Add a subsection for freelance projects called `FREELANCE`
+  - [x] Move the freelance projects from the `EXPERIENCE` subsection to the `FREELANCE` subsection
 - [ ] Write the content for the `SKILLS` subsection next to each experience/freelance/education item
 - [ ] Create visuals with NanoBanana for each card
 - [ ] Create a template page for each project

@@ -6,6 +6,8 @@ interface ExperienceCardProps {
   index: number
   onClick?: (id: string, detailUrl: string) => void
   onGitHubClick?: (url: string) => void
+  /** Whether to show the type badge (e.g., "Freelance"). Defaults to true */
+  showBadge?: boolean
 }
 
 export function ExperienceCard({
@@ -13,6 +15,7 @@ export function ExperienceCard({
   index,
   onClick,
   onGitHubClick,
+  showBadge = true,
 }: ExperienceCardProps) {
   const handleClick = () => {
     onClick?.(experience.id, experience.detailUrl)
@@ -57,7 +60,7 @@ export function ExperienceCard({
             >
               {experience.company}
             </h4>
-            {experience.type && (
+            {showBadge && experience.type && (
               <span
                 className="text-xs px-2 py-0.5 rounded-full"
                 style={{
@@ -111,6 +114,25 @@ export function ExperienceCard({
       >
         {experience.description}
       </p>
+
+      {/* Skills */}
+      {experience.skills && experience.skills.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {experience.skills.map((skill) => (
+            <span
+              key={skill}
+              className="text-xs px-2 py-0.5 rounded-full"
+              style={{
+                backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                color: 'var(--color-text, #3d3d3d)',
+                fontFamily: "'IBM Plex Mono', monospace",
+              }}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      )}
 
       {/* Arrow indicator */}
       <div

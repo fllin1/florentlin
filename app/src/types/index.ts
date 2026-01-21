@@ -30,6 +30,7 @@ export interface Experience {
   description: string
   detailUrl: string
   githubUrl: string | null
+  skills?: string[]
 }
 
 export interface Education {
@@ -42,6 +43,7 @@ export interface Education {
   endDate: string
   description: string
   detailUrl: string | null
+  skills?: string[]
 }
 
 export interface Skill {

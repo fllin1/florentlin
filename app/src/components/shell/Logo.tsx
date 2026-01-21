@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 interface LogoProps {
@@ -29,8 +30,23 @@ export function Logo({ onClick, className }: LogoProps) {
       )}
       aria-label="Go to home"
     >
-      {/* Gradient logo placeholder - replace with actual logo */}
-      <div className="w-full h-full rounded-full bg-gradient-to-br from-[#d4a373] to-[#ccd5ae] opacity-80" />
+      {/* Logo container */}
+      <div className="relative w-full h-full rounded-full overflow-hidden">
+        <Image
+          src="/favicon.svg"
+          alt="Logo"
+          width={48}
+          height={48}
+          className="w-full h-full rounded-full object-contain p-2 opacity-65"
+          priority
+        />
+        {/* Gradient overlay - theme aware */}
+        <div
+          className="absolute inset-0 rounded-full pointer-events-none z-10
+                     bg-[linear-gradient(45deg,rgba(212,163,115,0.9),rgba(204,213,174,0.7),transparent)]
+                     dark:bg-[linear-gradient(45deg,rgba(212,163,115,0.8),rgba(204,213,174,0.6),rgba(26,26,26,0.5))]"
+        />
+      </div>
     </button>
   )
 }

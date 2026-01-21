@@ -1,5 +1,90 @@
 # Changelog
 
+## 2026-01-21 — Key Projects & Languages
+
+### Changed
+- **Key Projects**: Now displayed as mini cards (not pills) with project name, description, and GitHub link
+  - MAWA: "Multimodal RAG pipeline"
+  - Global Franchises: "Semantic recommendation system"
+  - Cards have hover effect (translate-x) matching experience cards
+- **Languages**: Displayed as pills after Key Projects section
+- **Code cleanup**: Extracted static data and shared styles to top of file for cleaner code
+
+### Files Modified
+- `app/src/components/sections/ExperienceSkills.tsx`
+
+---
+
+## 2026-01-21 — Skills on Cards
+
+### Added
+- **Inline skills on cards**: Each Experience and Education card now displays its associated skills as pill-shaped tags
+  - Skills appear below the description on each card
+  - Uses the same styling as the previous skill tags (secondary color, monospace font)
+- **Skills field in types**: Added optional `skills?: string[]` field to Experience and Education interfaces
+
+### Changed
+- **Layout**: Changed from two-column layout to single centered column
+  - Removed the separate Skills column from the right side
+  - Experience, Freelance, and Education sections now display in a narrower, centered layout (`max-w-2xl`)
+  - Skill categories will be reused on individual project detail pages
+
+### Removed
+- **Skills column**: Removed the categorized skills display from the Experience & Skills section
+- **skillCategories prop**: Removed from ExperienceSection and ExperienceSkills components
+- **onSkillClick callback**: Removed from component prop chains
+
+### Files Modified
+- `app/src/types/index.ts` - Added skills field to Experience and Education
+- `app/src/data/experience.ts` - Added skills arrays to all items
+- `app/src/components/sections/ExperienceCard.tsx` - Added skills pills display
+- `app/src/components/sections/EducationCard.tsx` - Added skills pills display
+- `app/src/components/sections/ExperienceSkills.tsx` - Removed Skills column, single-column layout
+- `app/src/components/sections/ExperienceSection.tsx` - Removed skillCategories prop
+- `app/src/app/page.tsx` - Removed skillCategories and onSkillClick
+
+---
+
+## 2026-01-21 — Freelance Section
+
+### Added
+- **Freelance subsection**: Added a dedicated FREELANCE subsection to the Experience & Skills section
+  - Freelance experiences are now displayed in their own section between Experience and Education
+  - Filters experiences by `type: 'Freelance'` to separate them from regular work experience
+  - Freelance section only renders if there are freelance items (defensive check)
+
+### Changed
+- **ExperienceCard component**: Added `showBadge` prop to control type badge visibility
+  - New optional prop `showBadge?: boolean` (defaults to `true` for backward compatibility)
+  - Freelance cards in the Freelance section hide the badge since the section header already indicates the type
+  - Regular experience cards continue to show the badge when applicable
+
+### Files Modified
+- `app/src/components/sections/ExperienceSkills.tsx`
+- `app/src/components/sections/ExperienceCard.tsx`
+
+---
+
+## 2026-01-20 — Logo Update
+
+### Changed
+- **Logo component**: Replaced gradient placeholder with favicon.svg
+  - Moved `favicon.svg` from `app/src/components/` to `app/public/` for proper static asset serving
+  - Updated `Logo.tsx` to display the SVG logo with proper sizing and padding
+  - Logo now uses the actual favicon design instead of gradient placeholder
+  - Added theme-aware transparent gradient overlay on top of logo
+    - Light mode: Subtle gradient using primary (#d4a373) and secondary (#ccd5ae) colors with low opacity
+    - Dark mode: Enhanced gradient with higher opacity for better visibility on dark backgrounds
+  - Replaced `<img>` with Next.js `<Image />` component for better performance and optimization
+    - Added `priority` prop for above-the-fold loading
+    - Set explicit dimensions (48x48px) matching container size
+
+### Files Modified
+- `app/src/components/shell/Logo.tsx`
+- `app/public/favicon.svg` (moved from `app/src/components/favicon.svg`)
+
+---
+
 ## 2026-01-20 — Navigation Fix
 
 ### Fixed

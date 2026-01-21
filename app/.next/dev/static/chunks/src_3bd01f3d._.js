@@ -25,8 +25,10 @@ __turbopack_context__.s([
     ()=>Logo
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
 "use client";
+;
 ;
 ;
 function Logo({ onClick, className }) {
@@ -38,15 +40,36 @@ function Logo({ onClick, className }) {
         'focus:outline-none focus:ring-2 focus:ring-[#d4a373]/50', className),
         "aria-label": "Go to home",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-full rounded-full bg-gradient-to-br from-[#d4a373] to-[#ccd5ae] opacity-80"
-        }, void 0, false, {
+            className: "relative w-full h-full rounded-full overflow-hidden",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: "/favicon.svg",
+                    alt: "Logo",
+                    width: 48,
+                    height: 48,
+                    className: "w-full h-full rounded-full object-contain p-2 opacity-65",
+                    priority: true
+                }, void 0, false, {
+                    fileName: "[project]/src/components/shell/Logo.tsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 rounded-full pointer-events-none z-10 bg-[linear-gradient(45deg,rgba(212,163,115,0.9),rgba(204,213,174,0.7),transparent)] dark:bg-[linear-gradient(45deg,rgba(212,163,115,0.8),rgba(204,213,174,0.6),rgba(26,26,26,0.5))]"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/shell/Logo.tsx",
+                    lineNumber: 44,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "[project]/src/components/shell/Logo.tsx",
-            lineNumber: 33,
+            lineNumber: 34,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/shell/Logo.tsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -803,7 +826,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$GitHubButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/sections/GitHubButton.tsx [app-client] (ecmascript)");
 ;
 ;
-function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
+function ExperienceCard({ experience, index, onClick, onGitHubClick, showBadge = true }) {
     const handleClick = ()=>{
         onClick?.(experience.id, experience.detailUrl);
     };
@@ -845,7 +868,7 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                lineNumber: 42,
+                lineNumber: 45,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -866,10 +889,10 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                                         children: experience.company
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 54,
                                         columnNumber: 13
                                     }, this),
-                                    experience.type && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    showBadge && experience.type && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-xs px-2 py-0.5 rounded-full",
                                         style: {
                                             backgroundColor: 'var(--color-secondary, #ccd5ae)',
@@ -879,13 +902,13 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                                         children: experience.type
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                                lineNumber: 50,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -896,13 +919,13 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                                 children: experience.role
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                                lineNumber: 73,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                        lineNumber: 49,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     experience.githubUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -912,18 +935,18 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                             onClick: onGitHubClick
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                            lineNumber: 84,
+                            lineNumber: 87,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                        lineNumber: 83,
+                        lineNumber: 86,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                lineNumber: 48,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -937,7 +960,7 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                         children: experience.location
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                        lineNumber: 97,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -947,7 +970,7 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                         children: "•"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                        lineNumber: 98,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -958,13 +981,13 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                        lineNumber: 99,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                lineNumber: 90,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -976,8 +999,28 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                 children: experience.description
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                lineNumber: 105,
+                lineNumber: 108,
                 columnNumber: 7
+            }, this),
+            experience.skills && experience.skills.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-wrap gap-2 mt-3",
+                children: experience.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-xs px-2 py-0.5 rounded-full",
+                        style: {
+                            backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                            color: 'var(--color-text, #3d3d3d)',
+                            fontFamily: "'IBM Plex Mono', monospace"
+                        },
+                        children: skill
+                    }, skill, false, {
+                        fileName: "[project]/src/components/sections/ExperienceCard.tsx",
+                        lineNumber: 122,
+                        columnNumber: 13
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/components/sections/ExperienceCard.tsx",
+                lineNumber: 120,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-60 transition-all duration-300 group-hover:translate-x-1",
@@ -995,17 +1038,17 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
                         d: "M5 12h14M12 5l7 7-7 7"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                        lineNumber: 121,
+                        lineNumber: 143,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                    lineNumber: 120,
+                    lineNumber: 142,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                lineNumber: 116,
+                lineNumber: 138,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
@@ -1023,13 +1066,13 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick }) {
       `
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-                lineNumber: 125,
+                lineNumber: 147,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/sections/ExperienceCard.tsx",
-        lineNumber: 30,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }
@@ -1192,6 +1235,26 @@ function EducationCard({ education, index, onClick }) {
                 lineNumber: 95,
                 columnNumber: 9
             }, this),
+            education.skills && education.skills.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-wrap gap-2 mt-3",
+                children: education.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-xs px-2 py-0.5 rounded-full",
+                        style: {
+                            backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                            color: 'var(--color-text, #3d3d3d)',
+                            fontFamily: "'IBM Plex Mono', monospace"
+                        },
+                        children: skill
+                    }, skill, false, {
+                        fileName: "[project]/src/components/sections/EducationCard.tsx",
+                        lineNumber: 110,
+                        columnNumber: 13
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/components/sections/EducationCard.tsx",
+                lineNumber: 108,
+                columnNumber: 9
+            }, this),
             isClickable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-60 transition-all duration-300 group-hover:translate-x-1",
                 style: {
@@ -1208,17 +1271,17 @@ function EducationCard({ education, index, onClick }) {
                         d: "M5 12h14M12 5l7 7-7 7"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/EducationCard.tsx",
-                        lineNumber: 113,
+                        lineNumber: 132,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/EducationCard.tsx",
-                    lineNumber: 112,
+                    lineNumber: 131,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/EducationCard.tsx",
-                lineNumber: 108,
+                lineNumber: 127,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("style", {
@@ -1236,7 +1299,7 @@ function EducationCard({ education, index, onClick }) {
       `
             }, void 0, false, {
                 fileName: "[project]/src/components/sections/EducationCard.tsx",
-                lineNumber: 118,
+                lineNumber: 137,
                 columnNumber: 7
             }, this)
         ]
@@ -1403,6 +1466,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section
 ;
 ;
 function ExperienceSkills({ experiences, education, skillCategories, onExperienceClick, onEducationClick, onSkillClick, onGitHubClick }) {
+    // Separate regular experiences from freelance
+    const regularExperiences = experiences.filter((e)=>e.type !== 'Freelance');
+    const freelanceExperiences = experiences.filter((e)=>e.type === 'Freelance');
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "experience",
         className: "py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-surface)]/50",
@@ -1424,7 +1490,7 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                             children: "Experience & Skills"
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                            lineNumber: 41,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1434,13 +1500,13 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                            lineNumber: 50,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                    lineNumber: 40,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1460,31 +1526,69 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                                             children: "Experience"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "space-y-4",
-                                            children: experiences.map((experience, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ExperienceCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ExperienceCard"], {
+                                            children: regularExperiences.map((experience, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ExperienceCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ExperienceCard"], {
                                                     experience: experience,
                                                     index: index,
                                                     onClick: onExperienceClick,
                                                     onGitHubClick: onGitHubClick
                                                 }, experience.id, false, {
                                                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 77,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 75,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 65,
                                     columnNumber: 13
+                                }, this),
+                                freelanceExperiences.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-sm uppercase tracking-[0.2em] mb-6 pb-2 border-b",
+                                            style: {
+                                                color: 'var(--color-text-muted, #6b6b6b)',
+                                                borderColor: 'var(--color-surface, #faedcd)'
+                                            },
+                                            children: "Freelance"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
+                                            lineNumber: 91,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-4",
+                                            children: freelanceExperiences.map((experience, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ExperienceCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ExperienceCard"], {
+                                                    experience: experience,
+                                                    index: index,
+                                                    onClick: onExperienceClick,
+                                                    onGitHubClick: onGitHubClick,
+                                                    showBadge: false
+                                                }, experience.id, false, {
+                                                    fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
+                                                    lineNumber: 102,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
+                                            lineNumber: 100,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
+                                    lineNumber: 90,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -1497,7 +1601,7 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                                             children: "Education"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 117,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1508,24 +1612,24 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                                                     onClick: onEducationClick
                                                 }, edu.id, false, {
                                                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                                    lineNumber: 97,
+                                                    lineNumber: 128,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 126,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                            lineNumber: 59,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1539,7 +1643,7 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                                     children: "Skills"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1551,35 +1655,35 @@ function ExperienceSkills({ experiences, education, skillCategories, onExperienc
                                             onGitHubClick: onGitHubClick
                                         }, category.id, false, {
                                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 152,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 150,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                            lineNumber: 109,
+                            lineNumber: 140,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-                    lineNumber: 57,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-            lineNumber: 38,
+            lineNumber: 42,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/sections/ExperienceSkills.tsx",
-        lineNumber: 33,
+        lineNumber: 37,
         columnNumber: 5
     }, this);
 }
@@ -2212,7 +2316,13 @@ const experiences = [
         current: true,
         description: "Critical defect detection, model explainability with SHAP, ETL pipelines for predictive maintenance, and dashboard development.",
         detailUrl: "/projects/sncf",
-        githubUrl: null
+        githubUrl: null,
+        skills: [
+            "Python",
+            "SHAP",
+            "ETL",
+            "Docker"
+        ]
     },
     {
         id: "exp-002",
@@ -2224,7 +2334,13 @@ const experiences = [
         current: false,
         description: "Machine Un-Learning research and implementation. Fine-tuned LlaMA and RoBERTa models.",
         detailUrl: "/projects/aubay",
-        githubUrl: null
+        githubUrl: null,
+        skills: [
+            "PyTorch",
+            "LLMs",
+            "HuggingFace",
+            "Python"
+        ]
     },
     {
         id: "exp-003",
@@ -2236,7 +2352,12 @@ const experiences = [
         current: false,
         description: "Combinatorial optimization for the Traveling Salesman Problem using Google OR-Tools.",
         detailUrl: "/projects/deloitte",
-        githubUrl: null
+        githubUrl: null,
+        skills: [
+            "Python",
+            "OR-Tools",
+            "Optimization"
+        ]
     },
     {
         id: "exp-004",
@@ -2249,7 +2370,14 @@ const experiences = [
         current: false,
         description: "Multimodal RAG pipeline with OCR and GCP for legislative document analysis. Backend with FastAPI and Pydantic.",
         detailUrl: "/projects/mewe",
-        githubUrl: "https://github.com/fllin1/mawa"
+        githubUrl: "https://github.com/fllin1/mawa",
+        skills: [
+            "RAG",
+            "OCR",
+            "GCP",
+            "FastAPI",
+            "Pydantic"
+        ]
     },
     {
         id: "exp-005",
@@ -2262,7 +2390,13 @@ const experiences = [
         current: false,
         description: "Semantic recommendation system with embeddings, web scraping, and NER via LLMs for profile matching.",
         detailUrl: "/projects/franchises-global",
-        githubUrl: "https://github.com/fllin1/global-franchises"
+        githubUrl: "https://github.com/fllin1/global-franchises",
+        skills: [
+            "Embeddings",
+            "Web Scraping",
+            "NER",
+            "LLMs"
+        ]
     }
 ];
 const education = [
@@ -2275,7 +2409,13 @@ const education = [
         startDate: "2021-09",
         endDate: "2024-06",
         description: "Transport optimization with JAX, GPT architecture from scratch, Multi-Armed Bandit algorithms, Bayesian variable selection.",
-        detailUrl: "/projects/ensae"
+        detailUrl: "/projects/ensae",
+        skills: [
+            "JAX",
+            "PyTorch",
+            "Statistics",
+            "Deep Learning"
+        ]
     },
     {
         id: "edu-002",
@@ -2286,7 +2426,12 @@ const education = [
         startDate: "2019-09",
         endDate: "2021-06",
         description: "Intensive preparation for competitive entrance exams to French engineering schools.",
-        detailUrl: null
+        detailUrl: null,
+        skills: [
+            "Mathematics",
+            "Physics",
+            "Chemistry"
+        ]
     }
 ];
 const skillCategories = [

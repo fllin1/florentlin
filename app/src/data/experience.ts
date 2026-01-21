@@ -12,6 +12,7 @@ export const experiences: Experience[] = [
     description: "Critical defect detection, model explainability with SHAP, ETL pipelines for predictive maintenance, and dashboard development.",
     detailUrl: "/projects/sncf",
     githubUrl: null,
+    skills: ["Python", "SHAP", "ETL", "Docker"],
   },
   {
     id: "exp-002",
@@ -24,6 +25,7 @@ export const experiences: Experience[] = [
     description: "Machine Un-Learning research and implementation. Fine-tuned LlaMA and RoBERTa models.",
     detailUrl: "/projects/aubay",
     githubUrl: null,
+    skills: ["PyTorch", "LLMs", "HuggingFace", "Python"],
   },
   {
     id: "exp-003",
@@ -36,6 +38,7 @@ export const experiences: Experience[] = [
     description: "Combinatorial optimization for the Traveling Salesman Problem using Google OR-Tools.",
     detailUrl: "/projects/deloitte",
     githubUrl: null,
+    skills: ["Python", "OR-Tools", "Optimization"],
   },
   {
     id: "exp-004",
@@ -49,6 +52,7 @@ export const experiences: Experience[] = [
     description: "Multimodal RAG pipeline with OCR and GCP for legislative document analysis. Backend with FastAPI and Pydantic.",
     detailUrl: "/projects/mewe",
     githubUrl: "https://github.com/fllin1/mawa",
+    skills: ["RAG", "OCR", "GCP", "FastAPI", "Pydantic"],
   },
   {
     id: "exp-005",
@@ -62,6 +66,7 @@ export const experiences: Experience[] = [
     description: "Semantic recommendation system with embeddings, web scraping, and NER via LLMs for profile matching.",
     detailUrl: "/projects/franchises-global",
     githubUrl: "https://github.com/fllin1/global-franchises",
+    skills: ["Embeddings", "Web Scraping", "NER", "LLMs"],
   },
 ]
 
@@ -76,6 +81,7 @@ export const education: Education[] = [
     endDate: "2024-06",
     description: "Transport optimization with JAX, GPT architecture from scratch, Multi-Armed Bandit algorithms, Bayesian variable selection.",
     detailUrl: "/projects/ensae",
+    skills: ["JAX", "PyTorch", "Statistics", "Deep Learning"],
   },
   {
     id: "edu-002",
@@ -87,6 +93,7 @@ export const education: Education[] = [
     endDate: "2021-06",
     description: "Intensive preparation for competitive entrance exams to French engineering schools.",
     detailUrl: null,
+    skills: ["Mathematics", "Physics", "Chemistry"],
   },
 ]
 

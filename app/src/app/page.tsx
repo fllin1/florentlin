@@ -9,7 +9,7 @@ import {
   ContactSection
 } from "@/components/sections"
 import { useActiveSection, scrollToSection } from "@/hooks"
-import { profile, aspirations, hobbies, experiences, education, skillCategories, contactLinks } from "@/data"
+import { profile, aspirations, hobbies, experiences, education, contactLinks } from "@/data"
 import type { SectionNavItem } from "@/types"
 
 export default function Home() {
@@ -45,10 +45,6 @@ export default function Home() {
     router.push(detailUrl)
   }
 
-  const handleSkillClick = (_id: string, detailUrl: string) => {
-    router.push(detailUrl)
-  }
-
   const handleGitHubClick = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer")
   }
@@ -76,10 +72,8 @@ export default function Home() {
       <ExperienceSection
         experiences={experiences}
         education={education}
-        skillCategories={skillCategories}
         onExperienceClick={handleExperienceClick}
         onEducationClick={handleEducationClick}
-        onSkillClick={handleSkillClick}
         onGitHubClick={handleGitHubClick}
       />
       <AboutSection aspirations={aspirations} hobbies={hobbies} />
