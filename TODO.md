@@ -3,6 +3,7 @@
 ## Overall
 
 - [x] Change the logo
+- [ ] Create CI/CD actions to check the code and test the build
 - [ ] Add a chatbot on the (future) info page
 
 ## Hero Section

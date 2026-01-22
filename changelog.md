@@ -1,8 +1,26 @@
 # Changelog
 
+## 2026-01-22 — Fix Git Ignore Rules
+
+### Fixed
+
+- **Git Ignore**: Updated root `.gitignore` to properly ignore `app/.next` directory (changed `*/.next/` to `**/.next/` and `.next/`).
+- **Untrack Files**: Removed previously tracked `.next` files from git index to stop them from appearing in changes.
+
+---
+
+## 2026-01-22 — Fix Deloitte Project Data
+
+### Fixed
+
+- **Duplicate Property in Data**: Fixed a duplicate `content` property in `app/src/data/projects/deloitte.ts` that was causing build errors.
+
+---
+
 ## 2026-01-22 — Project Template Page
 
 ### Added
+
 - **Project Detail Page Template**
   - Dynamic route at `/projects/[slug]` for individual project pages
   - Hero section with project title, company, and date
@@ -41,6 +59,7 @@
   - `generateMetadata()` for dynamic page titles and descriptions
 
 ### Files Created
+
 ```
 app/src/
 ├── types/
@@ -65,6 +84,7 @@ app/src/
 ```
 
 ### Files Modified
+
 - `app/src/types/index.ts` — Added project type exports
 - `app/src/data/index.ts` — Added project data exports
 - `app/src/hooks/index.ts` — Added useProjectSections export
@@ -74,6 +94,7 @@ app/src/
 ## 2026-01-21 — Logo Gradient Refinement
 
 ### Changed
+
 - **Logo Gradient**: Refined the gradient overlay on the logo to be more transparent and theme-aware.
   - Reduced opacity significantly (from ~0.9 to ~0.15-0.25) for a more subtle and elegant look.
   - Adjusted the gradient angle to 135deg for a smoother transition.
@@ -81,6 +102,7 @@ app/src/
   - Dark mode: Slightly more pronounced but still transparent gradient to maintain visibility on dark backgrounds.
 
 ### Files Modified
+
 - `app/src/components/shell/Logo.tsx`
 
 ---
@@ -88,6 +110,7 @@ app/src/
 ## 2026-01-21 — Minimalist Color Update
 
 ### Changed
+
 - **Skill badges color scheme**: Switched from solid secondary color to a more minimalist "inverted" theme
   - Reverted `font-bold` for a cleaner look
   - Pills now use `backgroundColor: var(--color-background)` and `color: var(--color-text)`
@@ -96,6 +119,7 @@ app/src/
 - **Key Project cards**: Also updated to use `var(--color-background)` for consistency and better contrast within the section
 
 ### Files Modified
+
 - `app/src/components/sections/ExperienceCard.tsx`
 - `app/src/components/sections/EducationCard.tsx`
 - `app/src/components/sections/ExperienceSkills.tsx`
@@ -105,6 +129,7 @@ app/src/
 ## 2026-01-21 — Key Projects & Languages
 
 ### Changed
+
 - **Key Projects**: Now displayed as mini cards (not pills) with project name, description, and GitHub link
   - MAWA: "Multimodal RAG pipeline"
   - Global Franchises: "Semantic recommendation system"
@@ -113,6 +138,7 @@ app/src/
 - **Code cleanup**: Extracted static data and shared styles to top of file for cleaner code
 
 ### Files Modified
+
 - `app/src/components/sections/ExperienceSkills.tsx`
 
 ---
@@ -120,23 +146,27 @@ app/src/
 ## 2026-01-21 — Skills on Cards
 
 ### Added
+
 - **Inline skills on cards**: Each Experience and Education card now displays its associated skills as pill-shaped tags
   - Skills appear below the description on each card
   - Uses the same styling as the previous skill tags (secondary color, monospace font)
 - **Skills field in types**: Added optional `skills?: string[]` field to Experience and Education interfaces
 
 ### Changed
+
 - **Layout**: Changed from two-column layout to single centered column
   - Removed the separate Skills column from the right side
   - Experience, Freelance, and Education sections now display in a narrower, centered layout (`max-w-2xl`)
   - Skill categories will be reused on individual project detail pages
 
 ### Removed
+
 - **Skills column**: Removed the categorized skills display from the Experience & Skills section
 - **skillCategories prop**: Removed from ExperienceSection and ExperienceSkills components
 - **onSkillClick callback**: Removed from component prop chains
 
 ### Files Modified
+
 - `app/src/types/index.ts` - Added skills field to Experience and Education
 - `app/src/data/experience.ts` - Added skills arrays to all items
 - `app/src/components/sections/ExperienceCard.tsx` - Added skills pills display
@@ -150,18 +180,21 @@ app/src/
 ## 2026-01-21 — Freelance Section
 
 ### Added
+
 - **Freelance subsection**: Added a dedicated FREELANCE subsection to the Experience & Skills section
   - Freelance experiences are now displayed in their own section between Experience and Education
   - Filters experiences by `type: 'Freelance'` to separate them from regular work experience
   - Freelance section only renders if there are freelance items (defensive check)
 
 ### Changed
+
 - **ExperienceCard component**: Added `showBadge` prop to control type badge visibility
   - New optional prop `showBadge?: boolean` (defaults to `true` for backward compatibility)
   - Freelance cards in the Freelance section hide the badge since the section header already indicates the type
   - Regular experience cards continue to show the badge when applicable
 
 ### Files Modified
+
 - `app/src/components/sections/ExperienceSkills.tsx`
 - `app/src/components/sections/ExperienceCard.tsx`
 
@@ -170,6 +203,7 @@ app/src/
 ## 2026-01-20 — Logo Update
 
 ### Changed
+
 - **Logo component**: Replaced gradient placeholder with favicon.svg
   - Moved `favicon.svg` from `app/src/components/` to `app/public/` for proper static asset serving
   - Updated `Logo.tsx` to display the SVG logo with proper sizing and padding
@@ -182,6 +216,7 @@ app/src/
     - Set explicit dimensions (48x48px) matching container size
 
 ### Files Modified
+
 - `app/src/components/shell/Logo.tsx`
 - `app/public/favicon.svg` (moved from `app/src/components/favicon.svg`)
 
@@ -190,6 +225,7 @@ app/src/
 ## 2026-01-20 — Navigation Fix
 
 ### Fixed
+
 - **Section navigation indicator**: Fixed the right-side nav not recognizing About and Contact sections
   - The `SECTIONS` array order in `useActiveSection.ts` didn't match the actual page order
   - Changed from `['hero', 'about', 'experience', 'contact']` to `['hero', 'experience', 'about', 'contact']`
@@ -199,6 +235,7 @@ app/src/
 ## 2026-01-20 — Background Alternation Fix
 
 ### Fixed
+
 - **Section background alternation**: Corrected the alternating background pattern for light theme
   - Hero: body background (unchanged)
   - Experience: surface background (added)
@@ -210,6 +247,7 @@ app/src/
 ## 2026-01-20 — Dark Mode Fix
 
 ### Fixed
+
 - **CSS Variable Names**: Fixed incorrect CSS variable references across all section components
   - Changed `--text` to `--color-text`
   - Changed `--text-muted` to `--color-text-muted`
@@ -219,9 +257,11 @@ app/src/
   - These variables are defined in `globals.css` with proper dark mode overrides
 
 ### Removed
+
 - Removed `__tests__` folder (tests will be handled separately)
 
 ### Files Modified
+
 - `app/src/components/sections/ContactSection.tsx`
 - `app/src/components/sections/ContactLink.tsx`
 - `app/src/components/sections/ExperienceSkills.tsx`
@@ -235,6 +275,7 @@ app/src/
 ## 2026-01-20 — Milestone 5: Contact
 
 ### Added
+
 - **Contact Section Implementation**
   - Primary CTA (Email) with prominent styling in bronze color
   - Secondary links (LinkedIn, GitHub) with surface background
@@ -254,7 +295,7 @@ app/src/
 
 - **Data Layer**
   - Created `src/data/contact.ts` with three contact links:
-    - Email (primary): 1florentlin@gmail.com
+    - Email (primary): <1florentlin@gmail.com>
     - LinkedIn (secondary): florentlin
     - GitHub (secondary): fllin1
   - Exported from data index
@@ -281,6 +322,7 @@ app/src/
     - Semantic HTML structure (section#contact, h2, buttons)
 
 ### Files Created/Modified
+
 ```
 app/src/
 ├── components/sections/
@@ -297,6 +339,7 @@ app/src/
 ```
 
 ### Milestone Checklist
+
 - [x] Tests written for key user flows (25 tests)
 - [x] All tests pass (156 total)
 - [x] Contact component renders with real data
@@ -312,6 +355,7 @@ app/src/
 ## 2026-01-20 — Milestone 4: Experience & Skills
 
 ### Added
+
 - **Experience & Skills Section Implementation**
   - Two-column layout (Experience+Education left, Skills right) on desktop
   - Single-column stacked layout on mobile
@@ -372,6 +416,7 @@ app/src/
     - Animation delays
 
 ### Files Created/Modified
+
 ```
 app/src/
 ├── components/sections/
@@ -392,6 +437,7 @@ app/src/
 ```
 
 ### Milestone Checklist
+
 - [x] Tests written for key user flows (63 tests)
 - [x] All tests pass (131 total)
 - [x] ExperienceSkills component renders with real data
@@ -408,6 +454,7 @@ app/src/
 ## 2026-01-20 — Milestone 3: About
 
 ### Added
+
 - **About Section Implementation**
   - Two-column layout (Aspirations left, Hobbies right) on desktop
   - Single-column stacked layout on mobile
@@ -440,6 +487,7 @@ app/src/
     - Semantic HTML structure
 
 ### Files Created/Modified
+
 ```
 app/src/
 ├── components/sections/
@@ -459,6 +507,7 @@ app/src/
 ```
 
 ### Milestone Checklist
+
 - [x] Tests written for key user flows (40 tests)
 - [x] All tests pass (68 total)
 - [x] About component renders with real data
@@ -474,6 +523,7 @@ app/src/
 ## 2026-01-20 — Milestone 2: Hero
 
 ### Added
+
 - **Hero Section Implementation**
   - Full Hero component with Japanese zen aesthetic design
   - Profile data display: name, title, location, tagline with emphasis
@@ -505,6 +555,7 @@ app/src/
     - Keyboard navigation
 
 ### Files Created/Modified
+
 ```
 app/
 ├── vitest.config.ts (new)
@@ -527,6 +578,7 @@ app/
 ```
 
 ### Milestone Checklist
+
 - [x] Tests written for key user flows (28 tests)
 - [x] All tests pass
 - [x] Hero component renders with real profile data
@@ -540,6 +592,7 @@ app/
 ## 2026-01-20 — Milestone 1: Foundation
 
 ### Added
+
 - **Next.js Project Setup**
   - Initialized Next.js 16.1.4 with TypeScript, Tailwind CSS, and App Router
   - Added `clsx` and `tailwind-merge` for class name utilities
@@ -588,6 +641,7 @@ app/
   - Alternating background colors for visual separation
 
 ### Files Created
+
 ```
 app/
 ├── src/
@@ -617,6 +671,7 @@ app/
 ```
 
 ### Milestone Checklist
+
 - [x] Design tokens are configured
 - [x] Data model types are defined
 - [x] Routes exist for all sections (scroll-based single page)
@@ -626,6 +681,7 @@ app/
 - [x] Responsive on mobile (nav hidden, content adapts)
 
 ### Next Steps
+
 - ~~Milestone 2: Hero section with full implementation~~ ✓
 - ~~Milestone 3: About section with aspirations and hobbies~~ ✓
 - ~~Milestone 4: Experience & Skills section~~ ✓

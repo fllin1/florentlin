@@ -23,7 +23,6 @@ export const deloitte: ProjectDetail = {
         {
           type: 'heading',
           content: 'Modeling',
-          content: 'Modeling',
         },
         {
           type: 'text',
