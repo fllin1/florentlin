@@ -64,7 +64,7 @@ export function ExperienceCard({
               <span
                 className="text-xs px-2 py-0.5 rounded-full"
                 style={{
-                  backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                  backgroundColor: 'var(--color-background, #fefae0)',
                   color: 'var(--color-text, #3d3d3d)',
                   fontFamily: "'IBM Plex Mono', monospace",
                 }}
@@ -123,7 +123,7 @@ export function ExperienceCard({
               key={skill}
               className="text-xs px-2 py-0.5 rounded-full"
               style={{
-                backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                backgroundColor: 'var(--color-background, #fefae0)',
                 color: 'var(--color-text, #3d3d3d)',
                 fontFamily: "'IBM Plex Mono', monospace",
               }}

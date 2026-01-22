@@ -40,11 +40,11 @@ export function Logo({ onClick, className }: LogoProps) {
           className="w-full h-full rounded-full object-contain p-2 opacity-65"
           priority
         />
-        {/* Gradient overlay - theme aware */}
+        {/* Gradient overlay - theme aware and subtle */}
         <div
           className="absolute inset-0 rounded-full pointer-events-none z-10
-                     bg-[linear-gradient(45deg,rgba(212,163,115,0.9),rgba(204,213,174,0.7),transparent)]
-                     dark:bg-[linear-gradient(45deg,rgba(212,163,115,0.8),rgba(204,213,174,0.6),rgba(26,26,26,0.5))]"
+                     bg-[linear-gradient(135deg,rgba(212,163,115,0.15),rgba(204,213,174,0.05))]
+                     dark:bg-[linear-gradient(135deg,rgba(212,163,115,0.25),rgba(204,213,174,0.15))]"
         />
       </div>
     </button>

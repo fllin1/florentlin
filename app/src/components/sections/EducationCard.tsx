@@ -27,9 +27,8 @@ export function EducationCard({
 
   return (
     <div
-      className={`group relative p-5 rounded-lg transition-all duration-300 opacity-0 animate-[fadeSlideUp_0.6s_ease-out_forwards] ${
-        isClickable ? 'cursor-pointer hover:translate-x-1' : ''
-      }`}
+      className={`group relative p-5 rounded-lg transition-all duration-300 opacity-0 animate-[fadeSlideUp_0.6s_ease-out_forwards] ${isClickable ? 'cursor-pointer hover:translate-x-1' : ''
+        }`}
       style={{
         animationDelay: `${0.1 + index * 0.1}s`,
         backgroundColor: 'var(--color-surface, #faedcd)',
@@ -111,7 +110,7 @@ export function EducationCard({
               key={skill}
               className="text-xs px-2 py-0.5 rounded-full"
               style={{
-                backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                backgroundColor: 'var(--color-background, #fefae0)',
                 color: 'var(--color-text, #3d3d3d)',
                 fontFamily: "'IBM Plex Mono', monospace",
               }}

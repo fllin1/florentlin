@@ -865,7 +865,7 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick, showBadge =
                                     showBadge && experience.type && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-xs px-2 py-0.5 rounded-full",
                                         style: {
-                                            backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                                            backgroundColor: 'var(--color-background, #fefae0)',
                                             color: 'var(--color-text, #3d3d3d)',
                                             fontFamily: "'IBM Plex Mono', monospace"
                                         },
@@ -977,7 +977,7 @@ function ExperienceCard({ experience, index, onClick, onGitHubClick, showBadge =
                 children: experience.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-xs px-2 py-0.5 rounded-full",
                         style: {
-                            backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                            backgroundColor: 'var(--color-background, #fefae0)',
                             color: 'var(--color-text, #3d3d3d)',
                             fontFamily: "'IBM Plex Mono', monospace"
                         },
@@ -1204,7 +1204,7 @@ function EducationCard({ education, index, onClick }) {
                 children: education.skills.map((skill)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-xs px-2 py-0.5 rounded-full",
                         style: {
-                            backgroundColor: 'var(--color-secondary, #ccd5ae)',
+                            backgroundColor: 'var(--color-background, #fefae0)',
                             color: 'var(--color-text, #3d3d3d)',
                             fontFamily: "'IBM Plex Mono', monospace"
                         },
@@ -1652,18 +1652,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$section
 "use client";
 ;
 ;
-function ExperienceSection({ experiences, education, skillCategories, onExperienceClick, onEducationClick, onSkillClick, onGitHubClick }) {
+function ExperienceSection({ experiences, education, onExperienceClick, onEducationClick, onGitHubClick }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ExperienceSkills$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExperienceSkills"], {
         experiences: experiences,
         education: education,
-        skillCategories: skillCategories,
         onExperienceClick: onExperienceClick,
         onEducationClick: onEducationClick,
-        onSkillClick: onSkillClick,
         onGitHubClick: onGitHubClick
     }, void 0, false, {
         fileName: "[project]/src/components/sections/ExperienceSection.tsx",
-        lineNumber: 33,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
@@ -2331,11 +2329,7 @@ const education = [
         endDate: "2021-06",
         description: "Intensive preparation for competitive entrance exams to French engineering schools.",
         detailUrl: null,
-        skills: [
-            "Mathematics",
-            "Physics",
-            "Chemistry"
-        ]
+        skills: []
     }
 ];
 const skillCategories = [
@@ -2622,9 +2616,6 @@ function Home() {
     const handleEducationClick = (_id, detailUrl)=>{
         router.push(detailUrl);
     };
-    const handleSkillClick = (_id, detailUrl)=>{
-        router.push(detailUrl);
-    };
     const handleGitHubClick = (url)=>{
         window.open(url, "_blank", "noopener,noreferrer");
     };
@@ -2650,20 +2641,18 @@ function Home() {
                 onSocialClick: handleSocialClick
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 75,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ExperienceSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ExperienceSection"], {
                 experiences: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$experience$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["experiences"],
                 education: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$experience$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["education"],
-                skillCategories: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$experience$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["skillCategories"],
                 onExperienceClick: handleExperienceClick,
                 onEducationClick: handleEducationClick,
-                onSkillClick: handleSkillClick,
                 onGitHubClick: handleGitHubClick
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 76,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$AboutSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AboutSection"], {
@@ -2671,7 +2660,7 @@ function Home() {
                 hobbies: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$about$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hobbies"]
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 85,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sections$2f$ContactSection$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ContactSection"], {
@@ -2679,13 +2668,13 @@ function Home() {
                 onContactClick: handleContactClick
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 86,
+                lineNumber: 80,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 70,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }

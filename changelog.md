@@ -1,5 +1,107 @@
 # Changelog
 
+## 2026-01-22 — Project Template Page
+
+### Added
+- **Project Detail Page Template**
+  - Dynamic route at `/projects/[slug]` for individual project pages
+  - Hero section with project title, company, and date
+  - "CONTENTS" table of contents sidebar (sticky on desktop)
+  - Scroll-spy highlighting for active section in TOC
+  - Support for rich content blocks (text, images, headings)
+  - Back navigation to portfolio's experience section
+
+- **New Types**
+  - `ContentBlock` — supports text, image, and heading types
+  - `ProjectSection` — section with id, title, and content blocks
+  - `ProjectDetail` — complete project data (slug, title, company, date, sections)
+
+- **New Components** (`app/src/components/projects/`)
+  - `ProjectLayout` — main layout with two-column grid (content + TOC)
+  - `ProjectHero` — hero with title, company, date, optional hero image
+  - `TableOfContents` — sticky right sidebar with scroll-spy
+  - `ContentSection` — renders sections with content blocks
+  - `ContentBlock` — renders individual blocks (text, image, heading)
+
+- **New Hook**
+  - `useProjectSections` — IntersectionObserver-based scroll-spy for TOC
+
+- **Project Data**
+  - Created `app/src/data/projects/index.ts` with sample data for all projects:
+    - SNCF (Predictive Maintenance)
+    - Aubay (Machine Un-Learning Research)
+    - Deloitte (Combinatorial Optimization)
+    - MEWE (Legislative Document Analysis)
+    - Franchises Global (Semantic Recommendation)
+    - ENSAE (Engineering Studies)
+  - Helper functions: `getProjectBySlug()`, `getAllProjectSlugs()`
+
+- **Static Generation**
+  - `generateStaticParams()` for pre-rendering all project pages
+  - `generateMetadata()` for dynamic page titles and descriptions
+
+### Files Created
+```
+app/src/
+├── types/
+│   └── project.ts (new)
+├── data/
+│   └── projects/
+│       └── index.ts (new)
+├── components/
+│   └── projects/
+│       ├── ProjectLayout.tsx (new)
+│       ├── ProjectHero.tsx (new)
+│       ├── TableOfContents.tsx (new)
+│       ├── ContentSection.tsx (new)
+│       ├── ContentBlock.tsx (new)
+│       └── index.ts (new)
+├── hooks/
+│   └── useProjectSections.ts (new)
+└── app/
+    └── projects/
+        └── [slug]/
+            └── page.tsx (new)
+```
+
+### Files Modified
+- `app/src/types/index.ts` — Added project type exports
+- `app/src/data/index.ts` — Added project data exports
+- `app/src/hooks/index.ts` — Added useProjectSections export
+
+---
+
+## 2026-01-21 — Logo Gradient Refinement
+
+### Changed
+- **Logo Gradient**: Refined the gradient overlay on the logo to be more transparent and theme-aware.
+  - Reduced opacity significantly (from ~0.9 to ~0.15-0.25) for a more subtle and elegant look.
+  - Adjusted the gradient angle to 135deg for a smoother transition.
+  - Light mode: Very subtle blend of primary (bronze) and secondary (green) colors.
+  - Dark mode: Slightly more pronounced but still transparent gradient to maintain visibility on dark backgrounds.
+
+### Files Modified
+- `app/src/components/shell/Logo.tsx`
+
+---
+
+## 2026-01-21 — Minimalist Color Update
+
+### Changed
+- **Skill badges color scheme**: Switched from solid secondary color to a more minimalist "inverted" theme
+  - Reverted `font-bold` for a cleaner look
+  - Pills now use `backgroundColor: var(--color-background)` and `color: var(--color-text)`
+  - This provides high contrast in both modes (light pills on dark cards in dark mode, and vice versa)
+  - Applied to ExperienceCard, EducationCard, and Language pills
+- **Key Project cards**: Also updated to use `var(--color-background)` for consistency and better contrast within the section
+
+### Files Modified
+- `app/src/components/sections/ExperienceCard.tsx`
+- `app/src/components/sections/EducationCard.tsx`
+- `app/src/components/sections/ExperienceSkills.tsx`
+
+---
+
 ## 2026-01-21 — Key Projects & Languages
 
 ### Changed

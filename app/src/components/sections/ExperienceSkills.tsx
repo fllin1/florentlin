@@ -114,7 +114,7 @@ export function ExperienceSkills({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-4 rounded-lg transition-all duration-200 hover:translate-x-1"
-                  style={{ backgroundColor: 'var(--color-surface, #faedcd)' }}
+                  style={{ backgroundColor: 'var(--color-background, #fefae0)' }}
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span
@@ -152,7 +152,7 @@ export function ExperienceSkills({
                 <span
                   key={lang.name}
                   className="text-sm px-3 py-1.5 rounded-full"
-                  style={{ backgroundColor: 'var(--color-surface, #faedcd)', color: 'var(--color-text, #3d3d3d)' }}
+                  style={{ backgroundColor: 'var(--color-background, #fefae0)', color: 'var(--color-text, #3d3d3d)' }}
                 >
                   {lang.name}
                   <span className="ml-1.5 text-xs" style={{ color: 'var(--color-text-muted, #6b6b6b)' }}>

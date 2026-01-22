@@ -128,3 +128,9 @@ export interface HobbyCardProps {
   hobby: Hobby
   index: number
 }
+
+// =============================================================================
+// Project Types (re-export)
+// =============================================================================
+
+export type { ContentBlock, ProjectSection, ProjectDetail } from './project'

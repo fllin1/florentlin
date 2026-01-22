@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "28eacdac4bc5fa1b66c08c07b0e3ad0d",
-    "previewModeSigningKey": "2410715f5a182ca52acd557de631dd2c16266f80fea27a77be0c6923f2e4b2bc",
-    "previewModeEncryptionKey": "17bd864205aa40dabcfdeda71bbf20f933f1cc62aa6afd06d2c6ae542954f357"
-  }
-}
+{"version":4,"routes":{"/projects/sncf":{},"/projects/aubay":{},"/projects/deloitte":{},"/projects/mewe":{},"/projects/franchises-global":{},"/projects/ensae":{}},"dynamicRoutes":{"/projects/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/projects/[slug]","routeRegex":"^\\/projects\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"40cee102d3f13e35d8742e281f4ec46c","previewModeSigningKey":"5aec083682322099bb63d603fb783d84e4da605bf7f31e6f1c62b3add109ff1b","previewModeEncryptionKey":"db09dd9f512b3699e579a2f5b9a491b6387452cf0abd0b526cd37a68b9c78775"}}

@@ -93,7 +93,7 @@ export const education: Education[] = [
     endDate: "2021-06",
     description: "Intensive preparation for competitive entrance exams to French engineering schools.",
     detailUrl: null,
-    skills: ["Mathematics", "Physics", "Chemistry"],
+    skills: [],
   },
 ]
 
