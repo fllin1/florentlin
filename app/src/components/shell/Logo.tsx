@@ -15,15 +15,13 @@ export function Logo({ onClick, className }: LogoProps) {
       className={cn(
         'fixed top-6 left-6 z-50',
         'w-12 h-12 rounded-full',
-        // Glassmorphism effect
-        'bg-white/60 dark:bg-black/40',
-        'backdrop-blur-xl',
-        'border border-white/20 dark:border-white/10',
-        'shadow-lg shadow-black/5 dark:shadow-black/20',
+        // Matte effect with solid black background
+        'bg-[#000000]', // Using a rich off-black for elegance, consistent with dark mode bg
+        'shadow-md shadow-black/20',
         // Hover effect
         'transition-all duration-300 ease-out',
-        'hover:scale-105 hover:shadow-xl',
-        'hover:bg-white/80 dark:hover:bg-black/60',
+        'hover:scale-105 hover:shadow-lg',
+        'hover:bg-black', // Go to pure black on hover
         // Focus
         'focus:outline-none focus:ring-2 focus:ring-[#d4a373]/50',
         className
@@ -31,20 +29,14 @@ export function Logo({ onClick, className }: LogoProps) {
       aria-label="Go to home"
     >
       {/* Logo container */}
-      <div className="relative w-full h-full rounded-full overflow-hidden">
+      <div className="relative w-full h-full rounded-full overflow-hidden flex items-center justify-center">
         <Image
           src="/favicon.svg"
           alt="Logo"
           width={48}
           height={48}
-          className="w-full h-full rounded-full object-contain p-2 opacity-65"
+          className="w-full h-full rounded-full object-contain p-2 opacity-90" // Invert to make the logo white against black bg
           priority
-        />
-        {/* Gradient overlay - theme aware and subtle */}
-        <div
-          className="absolute inset-0 rounded-full pointer-events-none z-10
-                     bg-[linear-gradient(135deg,rgba(212,163,115,0.15),rgba(204,213,174,0.05))]
-                     dark:bg-[linear-gradient(135deg,rgba(212,163,115,0.25),rgba(204,213,174,0.15))]"
         />
       </div>
     </button>

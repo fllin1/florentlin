@@ -13,7 +13,10 @@
 - [x] Freelance subsection
   - [x] Add a subsection for freelance projects called `FREELANCE`
   - [x] Move the freelance projects from the `EXPERIENCE` subsection to the `FREELANCE` subsection
-- [ ] Write the content for the `SKILLS` subsection next to each experience/freelance/education item
+- [x] Write the content for the `SKILLS` subsection next to each experience/freelance/education item
+- [ ] Create an "project" view and a "skills" view
+  - [ ] Project view should display the project details and the skills associated with it
+  - [ ] Skills view should display the skills and the projects associated with it
 - [ ] Create visuals with NanoBanana for each card
 - [ ] Create a template page for each project
 

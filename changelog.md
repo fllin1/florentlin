@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-01-26 — Logo Style Update
+
+### Changed
+
+- **Logo Button**: Updated to a "matte" style with solid black background.
+  - Set background to `#1a1a1a` (off-black) for both light and dark modes.
+  - Inverted the logo image (`brightness-0 invert`) to appear white against the dark background.
+  - Hover state transitions to pure black.
+  - Removed the gradient overlay for a cleaner, flatter look.
+  - Replaced glassmorphism with solid background colors.
+
+### Files Modified
+
+- `app/src/components/shell/Logo.tsx`
+
+---
+
 ## 2026-01-22 — Fix Git Ignore Rules
 
 ### Fixed
